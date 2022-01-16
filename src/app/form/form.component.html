@@ -1,0 +1,8 @@
+<form autocomplete="off" class="text-center mt-5" #todoForm="ngForm" (ngSubmit)="handleSubmit(todoForm.value)">
+    <input type="text" 
+    name="todo"
+    [(ngModel)]="model.todo"
+    class="
+    bg-white border border-cyan-500 border-4 w-1/3 p-2 text-cyan-500 outline:none placeholder:text-cyan-500" placeholder="Add item"/>
+    <button class="ml-4 border border-white border-3 p-3 bg-cyan-500 text-white font-bold hover:bg-white hover:text-cyan-500 hover:border-cyan-500 hover:border-3">Add Item</button>
+</form>
