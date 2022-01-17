@@ -15,6 +15,7 @@ export class AppComponent {
   }
 
   updateTodo(item) {
+    console.log(item)
     let todoItem = this.todos.find(curItem => curItem.todo === item.todo)
     todoItem = item;
   }

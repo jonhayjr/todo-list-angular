@@ -3,7 +3,7 @@
         <input name="todo" type="text" class="text-center w-full outline-none focus:border border-cyan-500 cursor-pointer" [(ngModel)]="model.todo"/>
     </form>
         <div class="flex flex-row justify-center mt-4">
-            <input class="cursor-pointer items-center checkbox-icon" type="checkbox" [checked]="item.completed" (change)="toggleCompleted()"/>
+            <input class="cursor-pointer items-center checkbox-icon" type="checkbox" [(ngModel)]="model.completed" name="completed" (change)="toggleCompleted()"/>
             <span class="material-icons cursor-pointer ml-2 items-center text-cyan-500 delete-icon" (click)="handleDelete()">delete</span>
         </div>
 </div>

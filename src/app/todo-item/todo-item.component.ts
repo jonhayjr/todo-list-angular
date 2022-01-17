@@ -27,13 +27,12 @@ export class TodoItemComponent implements OnInit {
   }
 
   toggleCompleted() {
-    this.item.completed = !this.item.completed;
-    this.TodoChangeEvent.emit(this.item)
+    this.TodoChangeEvent.emit(this.model)
   }
 
   handleSubmit() {
     if (this.model.todo) {
-      this.TodoChangeEvent.emit(this.item)
+      this.TodoChangeEvent.emit(this.model)
     }
   }
 
